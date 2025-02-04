@@ -45,8 +45,8 @@
 
         // Load the CSV data for drivers and constructors
         Promise.all([
-            d3.csv("Data/drivers.csv"),
-            d3.csv("Data/constructors.csv")
+            d3.csv("drivers.csv"),
+            d3.csv("constructors.csv")
         ]).then(function(files) {
             const driverData = files[0];
             const constructorData = files[1];
